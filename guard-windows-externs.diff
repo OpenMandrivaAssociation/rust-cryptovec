@@ -1,0 +1,13 @@
+diff -uNr cryptovec-0.4.3~/src/lib.rs cryptovec-0.4.3/src/lib.rs
+--- cryptovec-0.4.3~/src/lib.rs	2017-10-20 15:00:10.000000000 +0200
++++ cryptovec-0.4.3/src/lib.rs	2017-11-10 21:44:19.262589261 +0100
+@@ -13,7 +13,9 @@
+ // limitations under the License.
+ //
+ extern crate libc;
++#[cfg(windows)]
+ extern crate winapi;
++#[cfg(windows)]
+ extern crate kernel32;
+ use libc::{malloc, free, c_void};
+ #[cfg(not(windows))]

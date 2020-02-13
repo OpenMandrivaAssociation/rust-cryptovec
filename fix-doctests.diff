@@ -1,0 +1,12 @@
+diff -uNr cryptovec-0.4.3~/src/lib.rs cryptovec-0.4.3/src/lib.rs
+--- cryptovec-0.4.3~/src/lib.rs	2017-10-20 15:00:10.000000000 +0200
++++ cryptovec-0.4.3/src/lib.rs	2017-11-10 21:52:31.197573735 +0100
+@@ -355,7 +355,7 @@
+     /// Create a `CryptoVec` from a slice
+     ///
+     /// ```
+-    /// CryptoVec::from_slice(b"test");
++    /// cryptovec::CryptoVec::from_slice(b"test");
+     /// ```
+     pub fn from_slice(s: &[u8]) -> CryptoVec {
+         let mut v = CryptoVec::new();

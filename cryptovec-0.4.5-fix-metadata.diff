@@ -1,0 +1,14 @@
+--- cryptovec-0.4.5/Cargo.toml	1969-12-31T16:00:00-08:00
++++ cryptovec-0.4.5/Cargo.toml	2018-05-14T23:01:29.658454-07:00
+@@ -19,11 +19,6 @@
+ documentation = "https://pijul.org/cryptovec/doc/cryptovec"
+ license = "Apache-2.0"
+ repository = "https://pijul.org/cryptovec"
+-[dependencies.kernel32-sys]
+-version = "0.2"
+ 
+ [dependencies.libc]
+ version = "0.2"
+-
+-[dependencies.winapi]
+-version = "0.2"
